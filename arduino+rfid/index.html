@@ -1,0 +1,211 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Develando phonegap </title>
+		<meta name="description" content="Descubrir nuevos ambientes de trabajo para el desarrollo de aplicaciones moviles basadas en la web">
+		<meta name="author" content="Jorge Lipa Challapa">
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<link rel="stylesheet" href="css/reveal.min.css">
+		<link rel="stylesheet" href="css/theme/simple.css" id="theme">
+
+		<!-- For syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- If the query includes 'print-pdf', use the PDF print sheet -->
+		<script>
+			document.write( '<link rel="stylesheet" href="css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+	<body>
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+				<section data-background="img/screen.jpg">
+				</section>
+				<section>
+					<h1>ARDUINO</h1>
+					<h3>+</h3>
+					<h2>RFID</h2><br>
+					<p>
+						Por: <a href="http://blog.colectivovirtual.com">Jorge Lipa</a> / jorge.lipa@gmail.com / <a href="http://www.scesi.org"> SCESI</a>
+					</p>
+				</section>
+
+				<section>
+					<p>Un poco de teoria </p>
+					<br>
+					<h2>RFID?</h2>
+					<br>
+					<h3 class="fragment"> Radio Frequency Identificator </h3>
+
+					<p class="fragment">Identificador de radiofrecuencia</p>
+
+				</section>
+				<section>
+					<h2>¿Como funciona?</h2>
+					<br>
+					<p>Se emite una señal de radio frecuencia de baja potencia para crear un campo electromagnetico con una antena emisora.</p>
+				</section>
+				<section>
+					<h2>¿Y esto en que lo aplicaria?</h2>
+					<br><br><br>	
+					<p>
+						<ul>
+					        <li class="fragment"> Control de personal</li>
+					        <li class="fragment"> Domotica </li>
+					        <li class="fragment"> Identificacion personal </li>
+					        <li class="fragment"> Inventarios</li>
+					        <li class="fragment">  y demas ......</li>
+					    </ul>
+					</p>	
+				</section>
+				<section>
+					<section>
+					    <h2 >Esto es real?</h2>
+					    <br>
+					    <p class="fragment"> por supuesto que si. </p>
+					    <p class="fragment"> veamos unos ejemplos </p>
+					</section>
+
+					<section>
+						<h3> Control de acceso </h3>
+						<img src="img/example1.jpg" style="border-radius:.2em;border:none;">
+					</section>
+
+					<section>
+						<h3> Flujo de trabajo</h3>
+						<img src="img/example2.jpg" style="border-radius:.2em;border:none;">
+					</section>
+
+					<section>
+						<h3> Inventarios </h3>
+						<img src="img/example3.jpg" style="border-radius:.2em;border:none;">
+					</section>
+
+					<section>
+						<h3> Identificacion </h3>
+						<img src="img/example4.jpg" style="border-radius:.2em;border:none;">
+					</section>
+
+					<section>
+						<h3> Seguridad </h3>
+						<img src="img/example5.jpg" style="border-radius:.2em;border:none;">
+					</section>					
+				</section>
+				
+				<section>
+					<h2>¿Que hay de la etiqueta?</h2>
+					<img src="img/tag.jpg" style="border-radius:.2em;border:none;">
+				</section>
+				<section>
+					<section>
+						<h2>Modulos para arduino</h2>
+					</section>
+
+					<section>
+						<img src="img/card1.jpg" style="border-radius:.2em;border:none;">
+						<p><a href="http://www.elecfreaks.com/wiki/index.php?title=RFID_/_NFC_Shield">RFID / NFC Shield - Electrofreaks</a></p>
+					</section>
+					
+					<section>
+						<img src="img/card2.jpg" style="border-radius:.2em;border:none;">
+						<p><a href="http://www.elechouse.com/elechouse/index.php?main_page=product_info&cPath=90_93&products_id=2156">13.56MHZ RFID Reader/Writer Module - ElectroHouse</a></p>
+					</section>
+
+					<section>
+						<img src="img/card3.jpg" style="border-radius:.2em;border:none;">
+						<p><a href="http://www.dhgate.com/store/product/rc522-rfid-module-for-arduino/164010778.html">RC522 RFID module for arduino</a></p>
+					</section>
+
+					<section>
+						<img src="img/card4.jpg" style="border-radius:.2em;border:none;">
+						<p><a href="http://www.adafruit.com/products/789">Adafruit PN532 NFC/RFID Controller Shield for Arduino - Adafruit</a></p>
+					</section>
+				</section>
+
+				<section>
+					<h2>Soporte para las etiquetas RFID</h2>
+					<br>
+					<ul>
+					    <li>Mifare1 S50</li>
+					    <li>Mifare1 S70</li>
+					    <li>Mifare UltraLight</li>
+					    <li>Mifare Pro</li>
+					    <li>Mifare Desfire</li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>Algo sobre frecuencias</h2>
+					<p>Depende de la aplicación para la que está diseñado y de la frecuencia de operación</p>
+					<ul>
+						<li class="fragment grow">
+							Frecuencia baja (entre 125 ó 134,2 kilohercios)
+						</li>
+						<li class="fragment grow">
+							Alta frecuencia (13,56 megahercios)
+						</li>
+						<li class="fragment grow">
+							Frecuencia ultraelevada (868 a 956 megahercios)
+						</li>
+						<li class="fragment grow">
+							Microondas (2,45 gigahercios)
+						</li>
+					</ul>
+				</section> 
+             
+             	<section>
+             		<h1>A CODEAR !!!</h1>
+             		
+             	</section>
+
+             	<section>
+             		<h1> Proyecto CENTINELA</h1>
+             	</section>	
+				<section>
+					<h1>GRACIAS</h1>
+					<h4>Preguntas?</h4>
+				</section>
+			</div>
+
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.min.js"></script>
+
+		<script>
+
+			// Full list of configuration options available here:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+				transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+
+				// Optional libraries used to extend on reveal.js
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+					{ src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>
