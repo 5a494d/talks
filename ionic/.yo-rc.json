@@ -1,0 +1,9 @@
+{
+  "generator-reveal": {
+    "presentationTitle": "hybrid apps to mobile",
+    "packageVersion": "1.0.0",
+    "revealTheme": "simple",
+    "useSass": false,
+    "deployToGithubPages": false
+  }
+}
