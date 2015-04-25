@@ -1,0 +1,16 @@
+.reveal section img {
+  margin: 10px;
+  border: none !important; 
+  box-shadow: none !important; 
+}
+
+table {
+  margin: auto !important;
+  border-collapse: collapse !important;
+  border-spacing: 0 !important;
+}
+
+table > td {
+  border-bottom: 1px solid #FFCC00;
+}
+
